@@ -62,10 +62,8 @@ ORDER BY average_borough_sat DESC
 -- Filter for schools in Brooklyn
 -- Aggregate on school_name
 -- Display results from highest average_math and restrict output to five rows
-
 SELECT TOP 5 school_name, average_math
 FROM schools
 WHERE borough = 'Brooklyn'
 GROUP BY school_name, average_math
 ORDER BY average_math DESC
-

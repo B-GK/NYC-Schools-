@@ -3,7 +3,7 @@ SELECT school_name
 FROM schools
 
 
--- Count rows with percent_tested missing and total number of schools
+-- Count rows with percent_tested missing and the total number of schools
 SELECT COUNT(school_name) - COUNT(percent_tested) as num_tested_missing, COUNT(school_name) as num_schools
 FROM schools
 
@@ -22,7 +22,7 @@ WHERE average_math >= 640
 ORDER BY average_math DESC
 
 
--- Find lowest average_reading
+-- Find the lowest average_reading
 SELECT MIN(average_reading) as lowest_reading
 FROM schools
 
